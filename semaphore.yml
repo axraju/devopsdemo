@@ -16,4 +16,4 @@ blocks:
             - echo "Running Hello World script"
             - ls -l
             - cat hello.py
-            - python3 hello.py
+            - python3 Hello_World.py
