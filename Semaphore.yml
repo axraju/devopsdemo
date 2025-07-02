@@ -1,0 +1,19 @@
+version: v1.0
+name: Hello World CI
+
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu2004
+
+blocks:
+  - name: Build & Test
+    task:
+      jobs:
+        - name: Build
+          commands:
+            - checkout
+            - sudo apt update && sudo apt install -y dotnet-sdk-6.0
+            - dotnet restore
+            - dotnet build
+            - dotnet test
