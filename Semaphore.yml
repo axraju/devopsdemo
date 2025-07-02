@@ -14,4 +14,4 @@ blocks:
           commands:
             - checkout
             - echo "Running Hello World script"
-            - python3 hello.py
+            - hello.py
