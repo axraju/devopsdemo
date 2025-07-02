@@ -25,7 +25,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore.txt" />
-    <Content Include="TextFile1.txt" />
     <Content Include="Semaphore.yml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />

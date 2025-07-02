@@ -1,5 +1,5 @@
 version: v1.0
-name: Hello World CI
+name: Hello World CI Pipeline
 
 agent:
   machine:
@@ -7,13 +7,11 @@ agent:
     os_image: ubuntu2004
 
 blocks:
-  - name: Build & Test
+  - name: Run Hello World
     task:
       jobs:
-        - name: Build
+        - name: Say Hello
           commands:
             - checkout
-            - sudo apt update && sudo apt install -y dotnet-sdk-6.0
-            - dotnet restore
-            - dotnet build
-            - dotnet test
+            - echo "Running Hello World script"
+            - python3 hello.py
