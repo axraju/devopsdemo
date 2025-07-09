@@ -27,7 +27,7 @@
   <ItemGroup>
     <Content Include=".gitignore.txt" />
     <Content Include="semaphore.yml" />
-    <Content Include="requiements.txt" />
+    <Content Include="requirements.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
