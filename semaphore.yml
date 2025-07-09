@@ -13,5 +13,5 @@ blocks:
         - name: Say Hello
           commands:
             - checkout
-            - pip install -r requirement.txt      # ✅ install numpy here
+            - pip install numpy      # ✅ install numpy here
             - python Hello_World.py    # ✅ then run your script
