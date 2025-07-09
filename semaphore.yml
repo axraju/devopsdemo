@@ -1,4 +1,4 @@
-version: v1.0
+﻿version: v1.0
 name: Hello World CI Pipeline
 
 agent:
@@ -7,11 +7,11 @@ agent:
     os_image: ubuntu2004
 
 blocks:
-  - name: Install and Run
+  - name: Run Hello World
     task:
       jobs:
-        - name: Install Numpy and Run Script
+        - name: Say Hello
           commands:
             - checkout
-            - pip install -r requirements.txt
-            - python Hello_World.py
+            - pip install -r requirement.txt      # ✅ install numpy here
+            - python Hello_World.py    # ✅ then run your script
